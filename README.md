@@ -12,7 +12,10 @@ sudo apt install python3-pip
 4. git clone [this repo]
 5. vi .env
 6. Paste [openai key] Esc :wq
-7. pip3 install -r requirements.txt
+7. Install the dependencies 
+```bash
+pip3 install -r requirements.txt
+```
 8. From Instance Summary Page > Security > click sg- under Security Groups
 9. Inbound rules > Edit Inbound rules > Scroll down > Add rule 
 10. Type: Custom TCP, Port range: 8501; Source: Anywhere IPv4 - 0.0.0.0/0; Save rules
