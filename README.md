@@ -16,11 +16,16 @@ sudo apt install python3-pip
 ```bash
 pip3 install -r requirements.txt
 ```
+### Allow inbound traffic to the port 8501
 8. From Instance Summary Page > Security > click sg- under Security Groups
 9. Inbound rules > Edit Inbound rules > Scroll down > Add rule 
 10. Type: Custom TCP, Port range: 8501; Source: Anywhere IPv4 - 0.0.0.0/0; Save rules
-11. From EC2 terminal - 
+
+11. Launching our application as  - 
 ```bash
 python3 -m streamlit run StreamlitAPP.py
 ```
-14. Open  - http://public_url:8501/ 
+14. Open from any browser 
+```bash
+http://public_url:8501/
+``` 
